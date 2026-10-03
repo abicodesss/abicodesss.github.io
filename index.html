@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abirami | Developer, maker, problem-solver</title>
+  <meta name="description" content="Explore Abirami's web, electronics, and game projects, built with React, Arduino, and Godot.">
+  <meta name="theme-color" content="#8BBB92">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%238BBB92'/%3E%3Ctext x='16' y='23' font-family='Arial' font-size='20' font-weight='700' text-anchor='middle' fill='%23092328'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Abirami</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contribute">Contribute</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Hi, I'm Abirami.</h1>
+          <p class="lead">I turn ideas into useful things with code and electronics.</p>
+          <p>I'm Abirami, a student developer who enjoys building for the web, experimenting with hardware, and making interactive projects work smoothly.</p>
+          <p class="actions">
+            <a class="btn btn-primary" href="#projects">Explore projects</a>
+            <a class="btn" href="#contact">Let’s connect</a>
+          </p>
+        </div>
+
+        <div class="hero-aside">
+          <figure class="portrait">
+            <img src="assets/portrait.jpg" alt="Portrait of Abirami" width="1600" height="1200" fetchpriority="high">
+          </figure>
+          <aside class="checklist" aria-label="What I bring to a project">
+            <h2>Curious by nature, practical by design</h2>
+            <ul>
+              <li>I learn by building and testing</li>
+              <li>I care about clear, usable details</li>
+              <li>I work across code and hardware</li>
+              <li>I keep refining until it feels right</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <h2 id="projects-title">A few things I’ve made</h2>
+        <div class="project-filters" role="group" aria-label="Filter projects" hidden>
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter-btn" type="button" data-filter="electronics" aria-pressed="false">Electronics</button>
+          <button class="filter-btn" type="button" data-filter="games" aria-pressed="false">Games</button>
+        </div>
+        <p class="sr-only" id="project-status" role="status" aria-live="polite">Showing all 4 projects.</p>
+        <div class="cards">
+
+          <article class="card" data-category="web">
+            <h3>DriftCheck</h3>
+            <p>Built for the VIT Hackathon, DriftCheck uses React to flag when a person’s biomarkers move outside typical ranges.</p>
+            <dl class="meta">
+              <div><dt>My role</dt><dd>Developer <!-- TODO: edit your exact role --></dd></div>
+              <div><dt>Tools</dt><dd>React</dd></div>
+            </dl>
+            <a class="card-link" href="https://github.com/NafeesathNawfa/DriftCheck-VIT" target="_blank" rel="noopener">View on GitHub<span class="sr-only"> (DriftCheck)</span></a>
+          </article>
+
+          <article class="card" data-category="electronics">
+            <h3>Fingerprint-based bank deposit</h3>
+            <p>This browser-based hardware simulation verifies a fingerprint before accepting a bank deposit. Try the flow without needing a physical sensor.</p>
+            <dl class="meta">
+              <div><dt>My role</dt><dd>Designer and builder <!-- TODO: edit your exact role --></dd></div>
+              <div><dt>Tools</dt><dd>Arduino, fingerprint sensor, Wokwi</dd></div>
+            </dl>
+            <a class="card-link" href="https://wokwi.com/projects/468345139446574081" target="_blank" rel="noopener">Open the simulation<span class="sr-only"> (fingerprint bank deposit)</span></a>
+          </article>
+
+          <article class="card" data-category="games">
+            <h3>Dino Run</h3>
+            <p>My first complete game project: a 2D runner built in Godot 4, developed from its opening scene into a playable build.</p>
+            <dl class="meta">
+              <div><dt>My role</dt><dd>Developer <!-- TODO: edit your exact role --></dd></div>
+              <div><dt>Tools</dt><dd>Godot 4</dd></div>
+            </dl>
+            <a class="card-link" href="https://github.com/abicodesss/Dino-run" target="_blank" rel="noopener">View on GitHub<span class="sr-only"> (Dino Run)</span></a>
+          </article>
+
+          <article class="card" data-category="electronics">
+            <h3>Temperature Monitoring</h3>
+            <p>An Arduino project that monitors temperature readings from a sensor to make changes in ambient conditions easier to track.</p>
+            <dl class="meta">
+              <div><dt>Focus</dt><dd>Temperature tracking</dd></div>
+              <div><dt>Tools</dt><dd>Arduino, temperature sensor</dd></div>
+            </dl>
+            <a class="card-link" href="https://github.com/abicodesss/Temperature-monitoring-system" target="_blank" rel="noopener">View on GitHub<span class="sr-only"> (Temperature Monitoring)</span></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section alt" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <h2 id="skills-title">Tools I like to work with</h2>
+        <div class="skill-groups">
+          <div>
+            <h3>Web</h3>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Electronics</h3>
+            <ul class="chips">
+              <li>Arduino</li><li>Wokwi</li><li>Sensors</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Games</h3>
+            <ul class="chips">
+              <li>Godot 4</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <ul class="chips">
+              <li>Git</li><li>GitHub</li><li>GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contribute -->
+    <section class="section" id="contribute" aria-labelledby="contribute-title">
+      <div class="wrap">
+        <h2 id="contribute-title">How I make a team’s work easier</h2>
+        <div class="contrib-grid">
+          <div>
+            <h3>Find and fix issues</h3>
+            <p>I reproduce a bug, trace what’s causing it, make a focused fix, and test the result.</p>
+          </div>
+          <div>
+            <h3>Keep content clear</h3>
+            <p>I update copy and links carefully, then review the page to make sure everything still works.</p>
+          </div>
+          <div>
+            <h3>Test across screens</h3>
+            <p>I check layouts on phones and desktops, and use the keyboard to catch access problems early.</p>
+          </div>
+          <div>
+            <h3>Make good work repeatable</h3>
+            <p>I watch for broken links and errors, and document fixes so the next update is easier.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section alt" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title">Contact</h2>
+        <p>Have a project in mind or a problem worth solving? I’d love to hear about it.</p>
+        <ul class="contact-list">
+          <li>
+            Email:
+            <a href="mailto:abi7002aaa@gmail.com" id="email-link">abi7002aaa@gmail.com</a>
+            <button type="button" class="copy-btn" id="copy-email">Copy</button>
+            <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
+          </li>
+          <li>GitHub: <a href="https://github.com/abicodesss" target="_blank" rel="noopener">github.com/abicodesss</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/abirami-r-4b4154392" target="_blank" rel="noopener">Connect with me on LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Abirami</p>
+    </div>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Project filters
+    (function () {
+      var filterGroup = document.querySelector('.project-filters');
+      var filterButtons = filterGroup.querySelectorAll('[data-filter]');
+      var projectCards = document.querySelectorAll('.card[data-category]');
+      var status = document.getElementById('project-status');
+      filterGroup.hidden = false;
+      filterGroup.addEventListener('click', function (event) {
+        var selectedButton = event.target.closest('[data-filter]');
+        if (!selectedButton) return;
+
+        var selectedFilter = selectedButton.dataset.filter;
+        var visibleCount = 0;
+        filterButtons.forEach(function (button) {
+          button.setAttribute('aria-pressed', button === selectedButton);
+        });
+        projectCards.forEach(function (card) {
+          card.hidden = selectedFilter !== 'all' && card.dataset.category !== selectedFilter;
+          if (!card.hidden) visibleCount++;
+        });
+        status.textContent = 'Showing ' + visibleCount + (visibleCount === 1 ? ' project.' : ' projects.');
+      });
+    })();
+
+    // Copy email button (falls back quietly if the browser blocks it)
+    (function () {
+      var btn = document.getElementById('copy-email');
+      var status = document.getElementById('copy-status');
+      var email = document.getElementById('email-link').textContent.trim();
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        if (!navigator.clipboard) {
+          status.textContent = 'Copy is not available. Please select the address.';
+          return;
+        }
+        navigator.clipboard.writeText(email).then(function () {
+          status.textContent = 'Copied';
+        }, function () {
+          status.textContent = 'Could not copy. Please select the address.';
+        });
+        setTimeout(function () { status.textContent = ''; }, 2500);
+      });
+    })();
+  </script>
+</body>
+</html>
